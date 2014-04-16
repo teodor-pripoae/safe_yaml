@@ -18,9 +18,9 @@ module YAML
 
     Syck = ::Syck
 
-  # JRuby's "Syck" is called "Yecht"
-  elsif defined? YAML::Yecht
-    Syck = YAML::Yecht
+  # JRuby's "Syck" is called "Psych"
+  elsif defined? ::Psych
+    Syck = Psych
   end
 end
 
